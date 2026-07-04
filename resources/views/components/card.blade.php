@@ -1,5 +1,5 @@
 <div class="card" style="width: 18rem;">
-    <img src="{{Storage::url($product->img)}}" alt="{{Storage::url($product->img)}}">
+    <img src="{{Storage::url($product->img)}}" alt="{{ $product->name ?? 'Prodotto senza immagine' }}">
   <div class="card-body">
     <h5 class="card-title">{{$product->name}}</h5>
     <p class="card-text">{{$product->description}}</p>

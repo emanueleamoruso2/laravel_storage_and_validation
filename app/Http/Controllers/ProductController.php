@@ -17,7 +17,7 @@ class ProductController extends Controller
     $description = $request->description;
     $price=$request->price;
     
-    $img=($request->file('img')) ? $request->file('img')->store('public/img') : 
+    $img=($request->file('img')) ? $request->file('img')->store('img', 'public') : 
     null;
     // METODO SALVARE DATI DB 1
     // creo un nuovo oggetto di classe product
