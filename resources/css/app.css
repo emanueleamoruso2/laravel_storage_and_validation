@@ -6,3 +6,26 @@
     height: 40vh;
     background-color:chocolate;
 }
+
+.clink{
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+.clink2{
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.clink:hover{
+    text-shadow: 4px 4px 5px red, -4px -4px 5px red;
+    transform: translateY(-5px);
+}
+
+.img-custom{
+    width: 18rem;
+    height: 200px;
+}

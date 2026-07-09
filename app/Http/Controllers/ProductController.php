@@ -43,11 +43,13 @@ class ProductController extends Controller
     ]);
     return redirect()->back()->with('status', 'Prodotto inserito correttamente');
     }
-
     Public function index(){
         // sto richiedendo al mio db tutti gli elementi all'interno della tabella products
         $products=Product::all();
         return view('index',['products'=>$products]);
+    }
+    public function create(){
+        return view('create');
     }
 }
 
